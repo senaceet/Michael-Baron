@@ -62,7 +62,7 @@ create table Series(
     primary key (IdSerie)
 );
 
-create table Servidor(
+create table Servidor_C(
 	IdServ int not null,
     NomServ varchar(50) not null,
     primary key (IdServ)
@@ -70,7 +70,7 @@ create table Servidor(
 
 create table Log_Error(
 	IdError tinyint not null,
-    DesErro varchar(210) not null,
+    DesError varchar(210) not null,
     FechaError datetime not null,
     primary key (IdError)
 );
