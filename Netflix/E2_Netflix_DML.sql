@@ -90,24 +90,106 @@ insert into Log_Error (IdError, DesError, FechaError) values
     (103, 'El E-mail no coinside con ninguna cuenta', '9999-01-01 00:00:00');
     
 insert into Usuario (NumDoc, Nom1, Nom2, Ape1, Ape2, Email, Contra, FK_IdDoc, FK_IdRol, Fk_IdPlan) values 
-	('1003573235', 'Cesar', 'Esteban', 'Martinez', '', 'cesar.martinez23@gmail.com', 'cesarmb10', 'D001', 002, 002),
-    ('53064501', 'Martha', '', 'Castro', 'Prada', 'mcprada@hotmail.com', 'madaju2984', 'D001', 002, 003),
-    ('AM476265', 'Ana', 'Maria', 'Perez', 'Garcia', 'mariperez16@gmail.com', '16anitaperez', 'D003', 002, 003),
-    ('1002462124', 'Michael', 'Daniel', 'Baron', 'Castro', 'baron.daniel242001@gmail.com', 'danielbar061117', 'D001', 001, 003),
-    ('AC123456', 'Orlando', '', 'Torres', 'Cardenas', 'Orlandomillos8.0@gmail.com', 'orlando80', 'D003', 002, 001),
-    ('442113', 'Edgar', 'Emanuel', 'Martinez', '', 'edgar.m24@yahoo.com', 'edgar24m', 'D002', 002, 002),
-    ('90043479', 'Jhonny', 'Alexander', 'Pineda', 'Cuitiva', 'japc17@gmail.com', 'alexander69', 'D001', 001, 003),
-    ('1001459332', 'Brayan', 'Danilo', 'Mora', '', 'elbrayan777@hotmail.com', 'Brayitan777mora', 'D001', 002, 002),
-    ('123456', 'Wilder', 'Fernando', 'Gonzalez', 'Caro', 'fernando.gc@gmail.com', '123fer456', 'D002', 002, 001),
-    ('58830093', 'Daniel', 'Alejandro', 'Sosa', '', 'danielsosita20@yahoo.com', 'teamosofia13', 'D004', 002, 003),
-    ('403014', 'Delphine', 'Lorey', 'Faramus', '', 'delphine.faramus14', 'fara1224', 'D002', 002, 002),
-    ('1002462124', 'Cristian', 'Camilo', 'Montenegro', 'Guayacán', 'criscamogu2002@gmail.com', 'criscata22', 'D002', 002, 003),
-    ('1000364890', 'Marisol', '', 'Garcia', 'Pedroza', 'marisolpedroza678@gmail.com', 'marisol06112017', 'D004', 001, 003),
-    ('AV000000', 'Claudia', 'Marcela', 'Tobon', '', 'marcetobon.87@gmail.com', 'tobon87clau', 'D003', 002, 002),
-    ('AQ120039', 'Alonso', '', 'Gamboa', 'Bohorquez', 'alonsogb56@hotmail.com', 'goamboa12', 'D003', 002, 001),
-    ('1004839928', 'Juan', 'Sebastian', 'Aguilar', 'Mora', 'juanprimeroa@yahoo.com', 'primeroajuan', 'D001', 002, 001),
-    ('69032935', 'Linda', 'nn', 'Muñoz', 'Angarita', '', 'Lindahermosa@gmail.com', 'D001', 002, 002),
-    ('2345678910', 'Andrés', 'Camilo', 'Garzón', '', 'acgarzon43@gmail.com', '43andresito08', 'D001', 002, 002),
-    ('3456789102', 'Christper', '', 'Andrade', '', 'andrade.c23@hotmail.com', '12345ac', 'D001', 002, 003),
-    ('4567891023', 'Samuel', '', 'Correa', 'Becerra', 'Samuelin23@gmail.com', 'sami2300', 'D002', 002, 001),
-    ('5678910234', 'Karol', '', 'Gonzalez', 'Acosta', 'KarolG2015@gmail.com', 'kago123', 'D001', 002, 002);
+	('1003573235', 'Cesar', 'Esteban', 'Martinez', '', 'cesar.martinez23@gmail.com', 'cesarmb10', 'D001', 002, 002), -- 1
+    ('53064501', 'Martha', '', 'Castro', 'Prada', 'mcprada@hotmail.com', 'madaju2984', 'D001', 002, 003), -- 2
+    ('AM476265', 'Ana', 'Maria', 'Perez', 'Garcia', 'mariperez16@gmail.com', '16anitaperez', 'D003', 002, 003), -- 3
+    ('1002462124', 'Michael', 'Daniel', 'Baron', 'Castro', 'baron.daniel242001@gmail.com', 'danielbar061117', 'D001', 001, 003), -- 4
+    ('AC123456', 'Orlando', '', 'Torres', 'Cardenas', 'Orlandomillos8.0@gmail.com', 'orlando80', 'D003', 002, 001), -- 5
+    ('442113', 'Edgar', 'Emanuel', 'Martinez', '', 'edgar.m24@yahoo.com', 'edgar24m', 'D002', 002, 002), -- 6
+    ('90043479', 'Jhonny', 'Alexander', 'Pineda', 'Cuitiva', 'japc17@gmail.com', 'alexander69', 'D001', 001, 003), -- 7
+    ('1001459332', 'Brayan', 'Danilo', 'Mora', '', 'elbrayan777@hotmail.com', 'Brayitan777mora', 'D001', 002, 002), -- 8
+    ('123456', 'Wilder', 'Fernando', 'Gonzalez', 'Caro', 'fernando.gc@gmail.com', '123fer456', 'D002', 002, 001), -- 9
+    ('58830093', 'Daniel', 'Alejandro', 'Sosa', '', 'danielsosita20@yahoo.com', 'teamosofia13', 'D004', 002, 003), -- 10
+    ('403014', 'Delphine', 'Lorey', 'Faramus', '', 'delphine.faramus14', 'fara1224', 'D002', 002, 002), -- 11
+    ('1002462124', 'Cristian', 'Camilo', 'Montenegro', 'Guayacán', 'criscamogu2002@gmail.com', 'criscata22', 'D002', 002, 003), -- 12
+    ('1000364890', 'Marisol', '', 'Garcia', 'Pedroza', 'marisolpedroza678@gmail.com', 'marisol06112017', 'D004', 001, 003), -- 13
+    ('AV000000', 'Claudia', 'Marcela', 'Tobon', '', 'marcetobon.87@gmail.com', 'tobon87clau', 'D003', 002, 002), -- 14
+    ('AQ120039', 'Alonso', '', 'Gamboa', 'Bohorquez', 'alonsogb56@hotmail.com', 'goamboa12', 'D003', 002, 001), -- 15
+    ('1004839928', 'Juan', 'Sebastian', 'Aguilar', 'Mora', 'juanprimeroa@yahoo.com', 'primeroajuan', 'D001', 002, 001),-- 16
+    ('69032935', 'Linda', 'nn', 'Muñoz', 'Angarita', '', 'Lindahermosa@gmail.com', 'D001', 002, 002), -- 17
+    ('2345678910', 'Andrés', 'Camilo', 'Garzón', '', 'acgarzon43@gmail.com', '43andresito08', 'D001', 002, 002), -- 18
+    ('3456789102', 'Christper', '', 'Andrade', '', 'andrade.c23@hotmail.com', '12345ac', 'D001', 002, 001), -- 19
+    ('4567891023', 'Samuel', '', 'Correa', 'Becerra', 'Samuelin23@gmail.com', 'sami2300', 'D002', 002, 001); -- 20
+    
+insert into Perfil (IdPer, NomPer, Avatar, FK_NumDoc, FK_IdDoc) values
+-- usuario1
+	(01, 'CesarM', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png', '1003573235', 'D001'),
+    (02, 'DayanaM', 'https://d2e70e9yced57e.cloudfront.net/wallethub/images/profile/avatars/Defaults/avatar1_350_Vdc18a74_.png', '1003573235', 'D001'),
+-- usuario2
+    (03, 'Tuchis', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png', '53064501', 'D001'),
+    (04, 'Juan sebas', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png', '53064501', 'D001'),
+    (05, 'Dani', 'https://i.pinimg.com/originals/fb/8e/8a/fb8e8a96fca2f049334f312086a6e2f6.png', '53064501', 'D001'),
+-- usuario3
+    (06, 'AnitaP', 'https://ih0.redbubble.net/image.618410871.2644/flat,800x800,075,f.u2.jpg', 'AM476265', 'D003'),
+    (07, 'MarioP', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png', 'AM476265', 'D003'),
+-- usuario4
+    (08, 'Negro', 'https://ih1.redbubble.net/image.618369215.1083/flat,800x800,075,f.u2.jpg', '1002462124', 'D001'),
+    (09, 'Michael', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png', '1002462124', 'D001'),
+    (10, 'Juanse', 'https://i.pinimg.com/originals/fb/8e/8a/fb8e8a96fca2f049334f312086a6e2f6.png', '1002462124', 'D001'),
+    (11, 'Mari', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png', '1002462124', 'D001'),
+-- usuario5
+    (12, 'OrlandoT', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png', 'AC123456', 'D003'),
+-- usuario6
+    (13, 'EdiMar', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png', '442113', 'D002'),
+-- usuario7
+    (14, 'Jhonny', 'https://ih0.redbubble.net/image.618410871.2644/flat,800x800,075,f.u2.jpg', '90043479', 'D001'),
+    (15, 'Mopri', 'https://d2e70e9yced57e.cloudfront.net/wallethub/images/profile/avatars/Defaults/avatar1_350_Vdc18a74_.png', '90043479', 'D001'),
+    (16, 'Johana', 'https://i.pinimg.com/originals/fb/8e/8a/fb8e8a96fca2f049334f312086a6e2f6.png', '90043479', 'D001'),
+-- usuario8
+    (17, 'El Brayan', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png', '1001459332', 'D001'),
+    (18, 'Maria', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png', '1001459332', 'D001'),
+-- usuario9
+    (19, 'Wil', 'https://i.pinimg.com/originals/fb/8e/8a/fb8e8a96fca2f049334f312086a6e2f6.png', '123456', 'D002'),
+-- usuario10
+    (20, 'Dani', 'https://ih1.redbubble.net/image.618369215.1083/flat,800x800,075,f.u2.jpg', '58830093', 'D004'),
+    (21, 'Sofi', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png', '58830093', 'D004'),
+-- usuario11
+    (22, 'Lorey', 'https://ih0.redbubble.net/image.618385909.1713/flat,1000x1000,075,f.u2.jpg', '403014', 'D002'),
+    (23, 'Brad', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png', '403014', 'D002'),
+-- usuario12
+    (24, 'Cristian', 'https://ih0.redbubble.net/image.618410871.2644/flat,800x800,075,f.u2.jpg', '1002462124', 'D002'),
+    (25, 'Cata', 'https://d2e70e9yced57e.cloudfront.net/wallethub/images/profile/avatars/Defaults/avatar1_350_Vdc18a74_.png', '1002462124', 'D002'),
+    (26, 'Tatis', 'https://i.pinimg.com/originals/fb/8e/8a/fb8e8a96fca2f049334f312086a6e2f6.png', '1002462124', 'D002'),
+-- usuario13
+    (27, 'Pichona', 'https://ih1.redbubble.net/image.618369215.1083/flat,800x800,075,f.u2.jpg', '1000364890', 'D004'),
+    (28, 'Hernan', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png', '1000364890', 'D004'),
+    (29, 'Maye', 'https://ih0.redbubble.net/image.618385909.1713/flat,1000x1000,075,f.u2.jpg', '1000364890', 'D004'),
+-- usuario14
+    (30, 'Claudix', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png', 'AV000000', 'D003'),
+    (31, 'Alejandro', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png', 'AV000000', 'D003'),
+-- usuario15
+    (32, 'Gambo', 'https://d2e70e9yced57e.cloudfront.net/wallethub/images/profile/avatars/Defaults/avatar1_350_Vdc18a74_.png', 'AQ120039', 'D003'),
+-- usuario16
+    (33, 'Sebas', 'https://ih0.redbubble.net/image.618410871.2644/flat,800x800,075,f.u2.jpg', '1004839928', 'D001'),
+-- usuario17
+    (34, 'Linda', 'https://ih0.redbubble.net/image.618385909.1713/flat,1000x1000,075,f.u2.jpg', '69032935', 'D001'),
+    (35, 'Flaco', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png', '69032935', 'D001'),
+-- usuario18
+    (36, 'Monito', 'https://ih1.redbubble.net/image.618369215.1083/flat,800x800,075,f.u2.jpg', '2345678910', 'D001'),
+    (37, 'Andrea', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png', '2345678910', 'D001'),
+-- usuario19
+    (38, 'Chris', 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png', '3456789102', 'D001'),
+-- usuario20
+    (37, 'Samuel C', 'https://i.pinimg.com/originals/fb/8e/8a/fb8e8a96fca2f049334f312086a6e2f6.png', '4567891023', 'D002');
+    
+insert into Factura (IdFactura, Fecha, Hora, FK_NumDoc, FK_IdDoc, FK_IdTipPago, FK_IdPlan) values
+	(0001, '2019-08-24', '09:43:15', '1003573235', 'D001', 001, 002),
+    (0001, '2020-03-02', '13:30:55', '53064501', 'D001', 004, 003),
+    (0001, '2018-05-24', '08:23:06', 'AM476265', 'D003', 002, 003),
+    (0001, '2019-11-30', '20:11:16', '1002462124', 'D001', 001, 003),
+    (0001, '2020-01-07', '12:58:02', 'AC123456', 'D003', 005, 001),
+    (0001, '2017-07-15', '15:20:59', '442113', 'D002', 003, 002),
+    (0001, '2018-04-11', '02:58:15', '90043479', 'D001', 001, 003),
+    (0001, '2020-05-05', '22:39:27', '1001459332', 'D001', 006, 002),
+    (0001, '2020-02-28', '21:28:40', '123456', 'D002', 002, 001),
+    (0001, '2019-09-17', '11:15:11', '58830093', 'D004', 006, 003),
+    (0001, '2018-12-03', '14:00:34', '403014', 'D002', 003, 002),
+    (0001, '2020-04-20', '17:50:10', '1002462124', 'D002', 002, 003),
+    (0001, '2020-01-05', '09:03:50', '1000364890', 'D004', 006, 003),
+    (0001, '2019-07-02', '23:31:49', 'AV000000', 'D003', 003, 002),
+    (0001, '2020-05-10', '16:43:18', 'AQ120039', 'D003', 001, 001),
+    (0001, '2018-10-09', '06:53:22', '1004839928', 'D001', 006, 001),
+    (0001, '2020-02-01', '10:27:01', '69032935', 'D001', 004, 002),
+    (0001, '2019-08-30', '23:34:58', '2345678910', 'D001', 005, 002),
+    (0001, '2018-05-10', '18:40:07', '3456789102', 'D001', 002, 001),
+    (0001, '2019-09-15', '08:30:36', '4567891023', 'D002', 006, 001);
