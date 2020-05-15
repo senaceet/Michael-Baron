@@ -92,26 +92,26 @@ insert into Log_Error (IdError, DesError, FechaError) values
     (103, 'El E-mail no coinside con ninguna cuenta', '9999-01-01 00:00:00');
     
 insert into Usuario (NumDoc, Nom1, Nom2, Ape1, Ape2, Email, Contra, FK_IdDoc, FK_IdRol, Fk_IdPlan) values 
-	('1003573235', 'Cesar', 'Esteban', 'Martinez', '', 'cesar.martinez23@gmail.com', 'cesarmb10', 'D001', 002, 002), -- 1
-    ('53064501', 'Martha', '', 'Castro', 'Prada', 'mcprada@hotmail.com', 'madaju2984', 'D001', 002, 003), -- 2
-    ('AM476265', 'Ana', 'Maria', 'Perez', 'Garcia', 'mariperez16@gmail.com', '16anitaperez', 'D003', 002, 003), -- 3
-    ('1002462124', 'Michael', 'Daniel', 'Baron', 'Castro', 'baron.daniel242001@gmail.com', 'danielbar061117', 'D001', 001, 003), -- 4
-    ('AC123456', 'Orlando', '', 'Torres', 'Cardenas', 'Orlandomillos8.0@gmail.com', 'orlando80', 'D003', 002, 001), -- 5
-    ('442113', 'Edgar', 'Emanuel', 'Martinez', '', 'edgar.m24@yahoo.com', 'edgar24m', 'D002', 002, 002), -- 6
-    ('90043479', 'Jhonny', 'Alexander', 'Pineda', 'Cuitiva', 'japc17@gmail.com', 'alexander69', 'D001', 001, 003), -- 7
-    ('1001459332', 'Brayan', 'Danilo', 'Mora', '', 'elbrayan777@hotmail.com', 'Brayitan777mora', 'D001', 002, 002), -- 8
-    ('123456', 'Wilder', 'Fernando', 'Gonzalez', 'Caro', 'fernando.gc@gmail.com', '123fer456', 'D002', 002, 001), -- 9
-    ('58830093', 'Daniel', 'Alejandro', 'Sosa', '', 'danielsosita20@yahoo.com', 'teamosofia13', 'D004', 002, 003), -- 10
-    ('403014', 'Delphine', 'Lorey', 'Faramus', '', 'delphine.faramus14', 'fara1224', 'D002', 002, 002), -- 11
-    ('1002462124', 'Cristian', 'Camilo', 'Montenegro', 'Guayacán', 'criscamogu2002@gmail.com', 'criscata22', 'D002', 002, 003), -- 12
-    ('1000364890', 'Marisol', '', 'Garcia', 'Pedroza', 'marisolpedroza678@gmail.com', 'marisol06112017', 'D004', 001, 003), -- 13
-    ('AV000000', 'Claudia', 'Marcela', 'Tobon', '', 'marcetobon.87@gmail.com', 'tobon87clau', 'D003', 002, 002), -- 14
-    ('AQ120039', 'Alonso', '', 'Gamboa', 'Bohorquez', 'alonsogb56@hotmail.com', 'goamboa12', 'D003', 002, 001), -- 15
-    ('1004839928', 'Juan', 'Sebastian', 'Aguilar', 'Mora', 'juanprimeroa@yahoo.com', 'primeroajuan', 'D001', 002, 001),-- 16
-    ('69032935', 'Linda', 'nn', 'Muñoz', 'Angarita', '', 'Lindahermosa@gmail.com', 'D001', 002, 002), -- 17
-    ('2345678910', 'Andrés', 'Camilo', 'Garzón', '', 'acgarzon43@gmail.com', '43andresito08', 'D001', 002, 002), -- 18
-    ('3456789102', 'Christper', '', 'Andrade', '', 'andrade.c23@hotmail.com', '12345ac', 'D001', 002, 001), -- 19
-    ('4567891023', 'Samuel', '', 'Correa', 'Becerra', 'Samuelin23@gmail.com', 'sami2300', 'D002', 002, 001); -- 20
+	('1003573235', 'Cesar', 'Esteban', 'Martinez', '', 'cesar.martinez23@gmail.com', SHA('Contra'), 'D001', 002, 002),
+    ('53064501', 'Martha', '', 'Castro', 'Prada', 'mcprada@hotmail.com', SHA('Contra'), 'D001', 002, 003),
+    ('AM476265', 'Ana', 'Maria', 'Perez', 'Garcia', 'mariperez16@gmail.com', SHA('Contra'), 'D003', 002, 003),
+    ('1002462124', 'Michael', 'Daniel', 'Baron', 'Castro', 'baron.daniel242001@gmail.com', SHA('Contra'), 'D001', 001, 003),
+    ('AC123456', 'Orlando', '', 'Torres', 'Cardenas', 'Orlandomillos8.0@gmail.com', SHA('Contras'), 'D003', 002, 001),
+    ('442113', 'Edgar', 'Emanuel', 'Martinez', '', 'edgar.m24@yahoo.com', SHA('Contra'), 'D002', 002, 002),
+    ('90043479', 'Jhonny', 'Alexander', 'Pineda', 'Cuitiva', 'japc17@gmail.com', SHA('Contra'), 'D001', 001, 003),
+    ('1001459332', 'Brayan', 'Danilo', 'Mora', '', 'elbrayan777@hotmail.com', SHA('Contra'), 'D001', 002, 002),
+    ('123456', 'Wilder', 'Fernando', 'Gonzalez', 'Caro', 'fernando.gc@gmail.com', SHA('Contra'), 'D002', 002, 001),
+    ('58830093', 'Daniel', 'Alejandro', 'Sosa', '', 'danielsosita20@yahoo.com', SHA('Contra'), 'D004', 002, 003),
+    ('403014', 'Delphine', 'Lorey', 'Faramus', '', 'delphine.faramus14', SHA('Contra'), 'D002', 002, 002),
+    ('1002462124', 'Cristian', 'Camilo', 'Montenegro', 'Guayacán', 'criscamogu2002@gmail.com', SHA('Contra'), 'D002', 002, 003),
+    ('1000364890', 'Marisol', '', 'Garcia', 'Pedroza', 'marisolpedroza678@gmail.com', SHA('Contra'), 'D004', 001, 003),
+    ('AV000000', 'Claudia', 'Marcela', 'Tobon', '', 'marcetobon.87@gmail.com', SHA('Contra'), 'D003', 002, 002),
+    ('AQ120039', 'Alonso', '', 'Gamboa', 'Bohorquez', 'alonsogb56@hotmail.com', SHA('Contra'), 'D003', 002, 001),
+    ('1004839928', 'Juan', 'Sebastian', 'Aguilar', 'Mora', 'juanprimeroa@yahoo.com', SHA('Contra'), 'D001', 002, 001),
+    ('69032935', 'Linda', '', 'Muñoz', 'Angarita', 'Lindahermosa@gmail.com', SHA('Contra'), 'D001', 002, 002),
+    ('2345678910', 'Andrés', 'Camilo', 'Garzón', '', 'acgarzon43@gmail.com', SHA('Contra'), 'D001', 002, 002),
+    ('3456789102', 'Christper', '', 'Andrade', '', 'andrade.c23@hotmail.com', SHA('Contra'), 'D001', 002, 001),
+    ('4567891023', 'Samuel', '', 'Correa', 'Becerra', 'Samuelin23@gmail.com', SHA('Contra'), 'D002', 002, 001);
     
 insert into Perfil (IdPer, NomPer, Avatar, FK_NumDoc, FK_IdDoc) values
 -- usuario1

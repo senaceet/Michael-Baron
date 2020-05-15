@@ -82,7 +82,7 @@ create table Usuario(
     Ape1 varchar(20) not null,
     Ape2 varchar(20),
     Email varchar(80) not null,
-    Contra varchar(30) not null,
+    Contra varchar(40) not null,
     Fk_IdDoc varchar(10) not null,
     FK_IdRol int not null,
     FK_IdPlan int not null
