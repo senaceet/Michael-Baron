@@ -45,7 +45,7 @@ create table Peliculas(
 	IdPeli int not null,
 	NomPeli varchar(110) not null,
     Duracion time not null,
-    AñoEst year(4) not null,
+    AñoEst year not null,
     Sinopsis text not null,
     Estado tinyint not null,
     primary key (IdPeli)
@@ -55,7 +55,7 @@ create table Series(
 	IdSerie int not null,
     NomSerie varchar(110) not null,
     NumTemp tinyint not null,
-    AñoEst year(4) not null,
+    AñoEst year not null,
     Sinopsis text not null,
     Calificacion float not null,
     Estado tinyint not null,
@@ -129,7 +129,7 @@ create table Temporadas(
 alter table Temporadas add constraint FK_Temporadas_Series foreign key (FK_IdSerie) references Series (IdSerie) on update cascade;
 
 create table Capitulos(
-	IdCap int not null,
+	IdCap varchar(15) not null,
     NomCap varchar(90) not null,
     NumCap tinyint not null,
     Duracion time not null,
@@ -141,54 +141,54 @@ alter table Capitulos add constraint FK_Capitulos_Temporadas foreign key (FK_IdT
 
 create table Categoria_Series(
 	FK_IdCate int not null,
-    FK_IdSeries int not null
+    FK_IdSeries int not null,
+    primary key (FK_IdCate, FK_IdSeries)
 );
 
 alter table Categoria_Series add constraint FK_Categoría_Serie_Categoría foreign key (FK_IdCate) references Categoria (IdCate) on update cascade;
 alter table Categoria_Series add constraint FK_Categoría_Serie_Series foreign key (FK_IdSeries) references Series (IdSerie) on update cascade;
-alter table Categoria_Series add primary key (FK_IdCate, FK_IdSeries);
 
 create table Categoria_Peliculas(
 	FK_IdPeli int not null,
-    FK_IdCate int not null
+    FK_IdCate int not null,
+    primary key (FK_IdPeli, FK_IdCate)
 );
 
 alter table Categoria_Peliculas add constraint FK_Categoría_Peliculas_Categoria foreign key (FK_IdCate) references Categoria (IdCate) on update cascade;
 alter table Categoria_Peliculas add constraint FK_Categoría_Peliculas_Peliculas foreign key (FK_IdPeli) references Peliculas (IdPeli) on update cascade;
-alter table Categoria_Peliculas add primary key (FK_IdPeli, FK_IdCate);
 
 create table Peliculas_Perfil(
 	FK_IdPeli int not null,
-    FK_IdPer int not null
+    FK_IdPer int not null,
+    primary key (FK_IdPeli, FK_IdPer)
 );
 
 alter table Peliculas_Perfil add constraint FK_Peliculas_Perfil_Peliculas foreign key (FK_IdPeli) references Peliculas (IdPeli) on update cascade;
 alter table Peliculas_Perfil add constraint FK_Peliculas_Perfil_Perfil foreign key (FK_IdPer) references Perfil (IdPer) on update cascade;
-alter table Peliculas_Perfil add primary key (FK_IdPeli, FK_IdPer);
 
 create table Peliculas_Idioma(
 	FK_IdPeli int not null,
-    FK_IdIdioma int not null
+    FK_IdIdioma int not null,
+    primary key (FK_IdPeli, FK_IdIdioma)
 );
 
 alter table Peliculas_Idioma add constraint FK_Peliculas_Idioma_Peliculas foreign key (FK_IdPeli) references Peliculas (IdPeli) on update cascade;
 alter table Peliculas_Idioma add constraint FK_Peliculas_Idioma_Idioma foreign key (FK_IdIdioma) references Idioma (IdIdioma) on update cascade;
-alter table Peliculas_Idioma add primary key (FK_IdPeli, FK_IdIdioma);
 
 create table Capitulos_Idioma(
-	FK_IdCap int not null,
-    FK_IdIdioma int not null
+	FK_IdCap varchar(15) not null,
+    FK_IdIdioma int not null,
+    primary key (FK_IdCap, FK_IdIdioma)
 );
 
 alter table Capitulos_Idioma add constraint FK_Capitulos_Idioma_Capitulos foreign key (FK_IdCap) references Capitulos (IdCap) on update cascade;
 alter table Capitulos_Idioma add constraint FK_Capitulos_Idioma_Idioma foreign key (FK_IdIdioma) references Idioma (IdIdioma) on update cascade;
-alter table Capitulos_Idioma add primary key (FK_IdCap, FK_IdIdioma);
 
 create table Series_Perfil(
 	FK_IdSerie int not null,
-    FK_IdPer int not null
+    FK_IdPer int not null,
+    primary key (FK_IdSerie, FK_IdPer)
 );
 
 alter table Series_Perfil add constraint FK_Series_Perfil_Series foreign key (FK_IdSerie) references Series (IdSerie) on update cascade;
 alter table Series_Perfil add constraint FK_Serie_Perfil_Perfil foreign key (FK_IdPer) references Perfil (IdPer) on update cascade;
-alter table Series_Perfil add primary key (FK_IdSerie, FK_IdPer);
