@@ -102,7 +102,7 @@ insert into Usuario (NumDoc, Nom1, Nom2, Ape1, Ape2, Email, Contra, FK_IdDoc, FK
     ('1001459332', 'Brayan', 'Danilo', 'Mora', '', 'elbrayan777@hotmail.com', SHA('Contra'), 'D001', 002, 002),
     ('123456', 'Wilder', 'Fernando', 'Gonzalez', 'Caro', 'fernando.gc@gmail.com', SHA('Contra'), 'D002', 002, 001),
     ('58830093', 'Daniel', 'Alejandro', 'Sosa', '', 'danielsosita20@yahoo.com', SHA('Contra'), 'D004', 002, 003),
-    ('403014', 'Delphine', 'Lorey', 'Faramus', '', 'delphine.faramus14', SHA('Contra'), 'D002', 002, 002),
+    ('403014', 'Delphine', 'Lorey', 'Faramus', '', 'delphine.faramus14@gmail.com', SHA('Contra'), 'D002', 002, 002),
     ('1002462124', 'Cristian', 'Camilo', 'Montenegro', 'Guayacán', 'criscamogu2002@gmail.com', SHA('Contra'), 'D002', 002, 003),
     ('1000364890', 'Marisol', '', 'Garcia', 'Pedroza', 'marisolpedroza678@gmail.com', SHA('Contra'), 'D004', 001, 003),
     ('AV000000', 'Claudia', 'Marcela', 'Tobon', '', 'marcetobon.87@gmail.com', SHA('Contra'), 'D003', 002, 002),
