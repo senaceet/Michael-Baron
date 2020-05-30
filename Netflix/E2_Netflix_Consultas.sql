@@ -10,7 +10,7 @@ select NomPeli as Película, AñoEst as Año_de_Estreno from Eje_Netflix.Pelicul
 
 select NomPlan as Plan, min(Costo) as Costo, CaracPlan as Caracteristicas from Eje_Netflix.Plan;
 
-select NomPlan as Plan, max(Costo) as Costo, CaracPlan as Caracteristicas from Eje_Netflix.Plan;
+select NomPlan as Plan, max(Costo) as Costo, CaracPlan as Caracteristicas from Eje_Netflix.Plan where Costo=(select max(costo) from Eje_Netflix.Plan);
 
 select count(NumDoc) as Cantidad_de_usuarios from Eje_Netflix.Usuario;
 

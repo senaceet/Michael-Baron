@@ -54,7 +54,7 @@ create table Peliculas(
 create table Series(
 	IdSerie int not null,
     NomSerie varchar(110) not null,
-    NumTemp tinyint not null,
+    NumTemporadas tinyint not null,
     AñoEst year not null,
     Sinopsis text not null,
     Calificacion float not null,

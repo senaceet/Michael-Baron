@@ -69,7 +69,7 @@ insert into Peliculas (IdPeli, NomPeli, Duracion, AñoEst, Sinopsis, Estado) val
     (1010, 'Zootopia ', '01:49:00', '2016', 'Decidida a demostrar su valía, la oficial Judy Hopps, la primera conejita de la fuerza policial de Zootopia, aprovecha la oportunidad de resolver su primer caso, incluso si eso significa asociarse con el zorro Nick Wilde para resolver el misterio.', 1), -- Adventure, Animation, Comedy, Family
     (1011, 'Batman el caballero de la noche', '02:32:00', '2008', 'Batman eleva las apuestas en su guerra contra el crimen. Con la ayuda del teniente Jim Gordon y el fiscal de distrito Harvey Dent, Batman se propone desmantelar las organizaciones criminales restantes que plagan las calles. La asociación demuestra ser efectiva, pero pronto se encuentran presa de un reinado de caos desatado por un cerebro criminal en ascenso conocido por los aterrorizados ciudadanos de Gotham como el Joker.', 1); -- Action, Crime, Drama, Thriller, Superhero
     
-insert into Series (IdSerie, NomSerie, NumTemp, AñoEst, Sinopsis, Calificacion, Estado) values
+insert into Series (IdSerie, NomSerie, NumTemporadas, AñoEst, Sinopsis, Calificacion, Estado) values
 	(2001, 'House', 8, '2004', 'El Dr. Gregory House es un médico inconformista que no tiene trato con los pacientes. Si bien su comportamiento puede ser antisocial, el Dr. House prospera con el desafío de resolver los acertijos médicos que otros médicos abandonan. Junto con su selecto equipo de jóvenes expertos médicos, hará lo que sea necesario en la carrera contrarreloj para resolver el caso.', 8.7, 1), -- Comedy, Drama, Mystery
     (2002, 'American Horror Story', 9, '2011', 'Una serie de antologías centradas en diferentes personajes y ubicaciones, que incluyen una casa con un pasado asesino, un manicomio, un aquelarre de brujas, un espectáculo de monstruos, un hotel embrujado, una granja poseída, un culto, el apocalipsis y un campamento de slasher.', 8.1, 1), -- Drama, Mystery, Fantasy, Science Fiction
     (2003, 'Stranger Things', 4, '2016', 'Homenaje a los clásicos misterios sobrenaturales de los años 80, "Stranger Things" es la historia de un niño que desaparece en el pequeño pueblo de Hawkins, Indiana, sin dejar rastro en 1983. En su búsqueda desesperada, tanto sus amigos como su familia y el local el sheriff está involucrado en un enigma extraordinario: experimentos de alto secreto, terribles fuerzas paranormales y una niña muy, muy rara ...', 8.8, 1), -- Drama, Fantasy, Science Fiction, Mystery
@@ -246,21 +246,17 @@ insert into Categoria_Series (FK_IdCate, FK_IdSeries) values
     (008, 2003), (21, 2003), (16, 2003), (19, 2003),
     (008, 2004), (020, 2004), (001, 2004), (022, 2004), (002, 2004),
     (008, 2005), (020, 2005), (021, 2005),
-    (008, 2006),
     (006, 2007), (008, 2007),
     (008, 2008), (020, 2008), (021, 2008), (019, 2008), (016, 2008),
-    (008, 2009), (019, 2009), (016, 2009),
-    (008, 2010), (020, 2010);
+    (008, 2009), (019, 2009), (016, 2009);
     
 insert into Categoria_Peliculas (FK_IdPeli, FK_IdCate) values
 	(1001, 002), (1001, 003), (1001, 005), (1001, 006), (1001, 014),
     (1002, 008),
     (1003, 001), (1003, 002), (1003, 016),
-    (1004, 008),
     (1005, 001), (1005, 002), (1005, 006), (1005, 022),
     (1006, 001), (1006, 002), (1006, 019), (1006, 016),
     (1007, 016), (1007, 008), (1007, 002),
-    (1008, 006), (1008, 020), (1008, 008),
     (1009, 016), (1009, 015), (1009, 008),
     (1010, 002), (1010, 003), (1010, 006), (1010, 005),
     (1011, 001), (1011, 005), (1011, 020), (1011, 018), (1011, 022);
