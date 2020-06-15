@@ -7,112 +7,226 @@
     <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        #Fondo:before{
+            content: "";
+            position: absolute;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.6;
+        }
+    </style>
 </head>
 
 <body style="background-color: black;">
-    <div style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/b75adad9-fd56-4ad7-a39f-300106e7b939/CO-es-20200302-popsignuptwoweeks-perspective_alpha_website_large.jpg); padding-left: 4%; padding-right: 4%; background-position: center; background-size: cover; padding-bottom: 10%;">
-        <br>
-        <div>
-            <a href="http://127.0.0.1:5500/index.html"><h1 class="float-left" style="color: #E50914; font-weight: bold; font-display: Bebas Neue;">NETFLIX</h1></a>
-            <a class="btn float-right" style="background-color: #E50914; color: #ffffff; size: 16px;" href="http://127.0.0.1:5500/SignIn.html;">Iniciar sesión</a>
-        </div>
-        <div>
-            <h1 style="padding-top: 16%; font-weight: bold; color: #ffffff; text-align: center;"><font size="50px" face="sans-serif">Programas y películas sin <br> límite y mucho más.</font></h1>
-            <h3 style="font-weight: normal; color: #ffffff; text-align: center;"><font face="sans-serif">Disfruta donde quieras. Cancela en cualquier <br> momento.</font></h3>
-            <div class="text-sm-center" style="padding-top: 2%; padding-bottom: 1%;">
-                <input type="email" name="Email" autocomplete="email" style="height: 60px; width: 40%; padding-left: 1%;" placeholder="Email">
-                <a class="btn btn-red" style="background-color: #F40612; height: 60px;" href=""><h3><font face="sans-serif" color=#FFFFE0>PROBAR AHORA <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg></font></h3></a>
+    <div id="Fondo" style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/b75adad9-fd56-4ad7-a39f-300106e7b939/CO-es-20200302-popsignuptwoweeks-perspective_alpha_website_large.jpg); padding-left: 4%; padding-right: 4%; background-position: center; background-size: cover; padding-bottom: 10%; position: relative;">
+        <div style="position: relative;">
+            <br>
+            <div>
+                <a href="index.html"><h1 class="float-left" style="color: #E50914; font-weight: bold; font-display: Bebas Neue;">NETFLIX</h1></a>
+                <a class="btn float-right" style="background-color: #E50914; color: #ffffff; size: 16px;" href="SignIn.html">Iniciar sesión</a>
             </div>
-            <h5 style="font-family: Arial, Helvetica, sans-serif; size: 55px; font-weight: normal; color: #ffffff; text-align: center;">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h5>
+            <div>
+                <h1 style="padding-top: 16%; font-weight: bold; color: #ffffff; text-align: center;"><font size="50px" face="sans-serif">Programas y películas sin <br> límite y mucho más.</font></h1>
+                <h3 style="font-weight: normal; color: #ffffff; text-align: center;"><font face="sans-serif">Disfruta donde quieras. Cancela en cualquier <br> momento.</font></h3>
+                <div>
+                    <form style="padding-top: 2%; padding-bottom: 1%; text-align: center;">
+                        <div class="form-group">
+                            <input type="email" name="Email" autocomplete="email" style="height: 60px; width: 40%; border: none;" placeholder="Email">
+                            <a class="btn btn-red" style="background-color: #F40612; height: 60px; padding-top: 1%;" type="submit" href=""><h3><font face="sans-serif" color=#FFFFE0>PROBAR AHORA  <i class="fa fa-angle-right"></i></font></h3></a>
+                        </div>
+                    </form>
+                </div>
+                <h5 style="font-family: Arial, Helvetica, sans-serif; size: 55px; font-weight: normal; color: #ffffff; text-align: center;">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h5>
+            </div>
         </div>
     </div>
-    <div class="clearfix" style="background-color: black; border-top: #222222 5px solid; border-bottom: #222222 5px solid;">
-        <div class="float-left col-7" style="padding-top: 10%; padding-left: 8%;">
-            <h1 style="color: white; font-weight: bold;"><font face="sans-serif" size="50px">Disfruta en tu TV.</font></h1>
-            <h4 style="color: white;"><font face="sans-serif">Ve en smart TV, PlayStation, Xbox, <br> Chromecast, Apple TV, reproductores de <br> Blu-ray y más.</font></h4>    
-            <div class="float-right col-6">
-                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" style="z-index: 1;">
-                <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" controls autoplay loop muted style="z-index: 0; padding-left: 62px; padding-top: 45px;">       
+    <div style="background-color: black;  border-top: #222222 8px solid;">
+        <div class="clearfix">    
+            <div class="float-left col-6" style="padding-top: 10%; padding-left: 8%;">
+                <h1 style="color: white; font-weight: bold;"><font face="sans-serif" size="50px">Disfruta en tu TV.</font></h1>
+                <h4 style="color: white;"><font face="sans-serif">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</font></h4>    
+            </div> 
+            <div class="float-right col-6" style="padding-top: 2%; padding-right: 8%;">
+                <div>
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" style="z-index: 1; width: 90%; height: 70%;">
+                    <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" controls autoplay loop muted style="z-index: 0; padding-left: 62px; padding-top: 45px;">       
+                </div>
             </div>
         </div> 
     </div>     
-    <div class="clearfix" style="background-color: black; padding: 20px;  border-top: #222222 5px solid; border-bottom: #222222 5px solid;">
-        <div class="float-right" style="padding-top: 10%; padding-left: 8%;">
-            <h1 style="color: white; font-weight: bold;"><font face="sans-serif" size="50px">Descarga tus series <br> para verlas offline.</font></h1>
-            <h4 style="color: white;"><font face="sans-serif">Guarda tu contenido favorito y ten siempre <br> algo para ver.</font></h4>
-        </div>
-        <div class="float-left">
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" style="width: 60%; height: 80%;">
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png">
-        </div>
-    </div>
-    <div class="clearfix" style="background-color: black; padding: 20px;  border-top: #222222 5px solid; border-bottom: #222222 5px solid;">
-        <div class="float-left" style="padding-top: 10%; padding-left: 8%;">
-            <h1 style="color: white; font-weight: bold;"><font face="sans-serif" size="50px">Disfruta donde quieras.</font></h1>
-            <h4 style="color: white;"><font face="sans-serif">Películas y programas ilimitados en tu teléfono, tablet, computadora y TV sin costo extra.</font></h4>
-            <div class="float-right">
-                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" style="z-index: 1; width: 35%; height: 55%;">
-                <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" controls autoplay loop muted style="z-index: 0; width: 31%; height: 46%; padding-left: 62px; padding-top: 45px;">
+    <div style="background-color: black; border-top: #222222 8px solid;">
+        <div class="clearfix">
+            <div class="float-right col-6" style="padding-top: 10%; padding-right: 8%; ">
+                <h1 style="color: white; font-weight: bold;"><font face="sans-serif" size="50px">Descarga tus series para verlas offline.</font></h1>
+                <h4 style="color: white;"><font face="sans-serif">Guarda tu contenido favorito y ten siempre algo para ver.</font></h4>
+            </div>
+            <div class="float-left col-6" style="padding-left: 8%;">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" style="width: 60%; height: 80%;">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png">
             </div>
         </div>
     </div>
-    <div class="clearfix" style="background-color: black; padding: 20px;  border-top: #222222 5px solid; border-bottom: #222222 5px solid;">
-        <div class="text-sm-center" style="padding-top: 4%;">
+    <div style="background-color: black; border-top: #222222 8px solid;">
+        <div class="clearfix">
+            <div class="float-left col-6" style="padding-top: 10%; padding-left: 8%;">
+                <h1 style="color: white; font-weight: bold;"><font face="sans-serif" size="50px">Disfruta donde quieras.</font></h1>
+                <h4 style="color: white;"><font face="sans-serif">Películas y programas ilimitados en tu teléfono, tablet, computadora y TV sin costo extra.</font></h4>
+            </div>
+            <div class="float-right col-6" style="padding-right: 8%;">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" style="z-index: 1;">
+                <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" controls autoplay loop muted style="z-index: 0; padding-left: 62px; padding-top: 45px;">
+            </div>
+        </div>
+    </div>
+    <div style="background-color: black; border-top: #222222 8px solid; text-align: center;" id="PreguntasF">
+        <div style="padding-top: 4%;">
             <h1 style="color: white; font-weight: bold;"><font face="sans-serif" size="50px">Preguntas frecuentes</font></h1>
         </div>
-        <div>
-            <div class="text-sm-center" style="padding-top: 2%; padding-bottom: 1%;">
-                <input type="email" name="Email" autocomplete="email" style="height: 60px; width: 40%;">
-                <a class="btn btn-red" style="background-color: #F40612; height: 60px;" href=""><h3><font face="sans-serif" color=#FFFFE0>PROBAR AHORA <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg></font></h3></a>
+        <div id="accordion" style="margin-right: 20%; margin-left: 20%; padding-top: 3%; text-align: left;">
+            <div class="card" style="background-color: #303030;">
+                <div class="card-header" role="tab" id="headingOne">
+                    <h5>
+                    <a class="btn-block" style="font-size: 26px; color: white;" href="#collapseOne" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne"><font face="sans-serif">¿Qué es Netflix?<svg class="bi bi-plus float-right" width="1.7em" height="1.7em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                      </svg></font></a>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="font-size: 26px; color: white;"><font face="sans-serif">
+                        Netflix es un servicio de streaming que ofrece una gran variedad de programas, películas y documentales premiados en casi cualquier pantalla conectada a internet.
+                        <br><br>
+                        Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más programas y películas!</font></p>
+                    </div>
+                </div>
             </div>
-            <h5 style="font-family: Arial, Helvetica, sans-serif; size: 55px; font-weight: normal; color: #ffffff; text-align: center;">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h5>
+            <div class="card" style="margin-top: 8px; background-color: #303030;">
+                <div class="card-header" role="tab" id="headingTwo">
+                    <h5>
+                    <a class="btn-block" style="font-size: 26px; color: white;" href="#collapseTwo" data-toggle="collapse" aria-expanded="true" aria-controls="collapseTwo"><font face="sans-serif">¿Cuánto cuesta Netflix?<svg class="bi bi-plus float-right" width="1.7em" height="1.7em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                      </svg></font></a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="font-size: 26px; color: white;"><font face="sans-serif">
+                        Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $ 16.900 hasta $ 38.900 al mes. Sin costos adicionales ni contratos.</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 8px; background-color: #303030;">
+                <div class="card-header" role="tab" id="headingThree">
+                    <h5>
+                    <a class="btn-block" style="font-size: 26px; color: white;" href="#collapseThree" data-toggle="collapse" aria-expanded="true" aria-controls="collapseThree"><font face="sans-serif">¿Dónde puedo ver Netflix?<svg class="bi bi-plus float-right" width="1.7em" height="1.7em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                      </svg></font></a>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="font-size: 26px; color: white;"><font face="sans-serif">
+                            Ve donde quieras, cuando quieras y en todos los dispositivos que quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+                            <br><br>
+                            Además, puedes descargar tus programas favoritos con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 8px; background-color: #303030;">
+                <div class="card-header" role="tab" id="headingFour">
+                    <h5>
+                    <a class="btn-block" style="font-size: 26px; color: white;" href="#collapseFour" data-toggle="collapse" aria-expanded="true" aria-controls="collapseFour"><font face="sans-serif">¿Cómo cancelo?<svg class="bi bi-plus float-right" width="1.7em" height="1.7em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                      </svg></font></a>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="font-size: 26px; color: white;"><font face="sans-serif">
+                            Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 8px; background-color: #303030;">
+                <div class="card-header" role="tab" id="headingFive">
+                    <h5>
+                    <a class="btn-block" style="font-size: 26px; color: white;" href="#collapseFive" data-toggle="collapse" aria-expanded="true" aria-controls="collapseFive"><font face="sans-serif">¿Qué puedo ver en Netflix?<svg class="bi bi-plus float-right" width="1.7em" height="1.7em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                      </svg></font></a>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="font-size: 26px; color: white;"><font face="sans-serif">
+                            Netflix tiene un amplio catálogo de programas, películas, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.</font></p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div style="padding-top: 2%;">
+            <div>
+                <form style="padding-top: 2%; padding-bottom: 1%; text-align: center;">
+                    <input type="email" name="Email" autocomplete="email" style="height: 60px; width: 34%; border: none; padding: 1%;" placeholder="Email">
+                    <a class="btn btn-red" style="background-color: #F40612; height: 60px; padding-top: 1%;" type="submit" href=""><h3><font face="sans-serif" color=#FFFFE0>PROBAR AHORA  <i class="fa fa-angle-right"></i></font></h3></a>
+                 </form>
+            </div>
+        </div>
+        <h5 style="font-family: Arial, Helvetica, sans-serif; size: 55px; font-weight: normal; color: #ffffff; text-align: center; padding-bottom: 5%;">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h5>
     </div>
-    <footer style="color: #999985; padding-left: 15%; padding-right: 15%; padding-top: 5%;"><font face="sans-serif" weight="normal">
+    <footer style="color: #999985; padding-left: 17%; padding-right: 15%; padding-top: 5%; border-top: #222222 8px solid;"><font face="sans-serif" weight="normal">
         <div class="text-left">
-            <p>¿Preguntas? Llama al<a class="btn btn-link text-muted" href="">01 800 917 1564</a></p>
-            <div class="row">
-                <div class="col-3">
-                    <ul>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Preguntas frecuentes</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Relaciones con inversionistas</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Formas de ver</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Información corporativa</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Originales de Netflix</a>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Centro de ayuda</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Empleo</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Términos de uso</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Contáctanos</a>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Cuenta</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Canjear tarjetas de regalo</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Privacidad</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Prueba de velocidad</a>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Prensa</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Comprar tarjetas de regalo</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Preferencias de cookies</a>
-                        <a class="btn btn-link text-muted" style="font-size: 13px;" href="">Avisos legales</a>
-                    </ul>
-                </div>
+            <p>¿Preguntas? Llama al <a class="text-link" style="color: #999985;" href="">01 800 917 1564</a></p>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="#PreguntasF">Preguntas frecuentes</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Relaciones con inversionistas</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Formas de ver</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Información corporativa</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Originales de Netflix</a><br>
+            </div>
+            <div class="col-3">
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Centro de ayuda</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Empleo</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Términos de uso</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Contáctanos</a><br>
+            </div>
+            <div class="col-3">
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Cuenta</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Canjear tarjetas de regalo</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Privacidad</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Prueba de velocidad</a><br>
+            </div>
+            <div class="col-3">
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Prensa</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Comprar tarjetas de regalo</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Preferencias de cookies</a><br>
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Avisos legales</a><br>
             </div>
         </div>
         </font>
+        <div class="dropdown" style="padding-top: 4%;">
+            <button class="btn dropdown-toggle" style="background-color: black; color: #999985; border: solid #999985 1px;" data-toggle="dropdown" type="button"><i class="fa fa-globe"></i> Español</button>
+            <div class="dropdown-menu" style="background-color: black; border: #999985 solid 1px;">
+              <a class="dropdown-item" style="color: #999985;" href="#">Español</a>
+              <a class="dropdown-item" style="color: #999985;" href="#">Inglés</a>
+            </div>
+        </div>
+        <div style="padding-top: 3%; padding-bottom: 3%;">
+            <p style="font-size: 13px; color: #999985;">Netflix Colombia</p>
+        </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

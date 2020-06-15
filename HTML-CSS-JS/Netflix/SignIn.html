@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
+    <title>Netflix | Inicio de Sesión</title>
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        #Fondo:before{
+            content: "";
+            position: absolute;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.6;
+        }
+    </style>
 </head>
-<body class="container" style="background-image: url(/Imagenes/Index/Fondo_Index.jpg); background-size: 100%; background-repeat: no-repeat;">
-    <br>
-    <div class="container">
-        <a href="http://127.0.0.1:5500/index.html"><h1 class="float-left" style="color: #E50914; font-weight: bold; font-display: Bebas Neue;">NETFLIX</h1></a>
+<body id="Fondo" style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/b75adad9-fd56-4ad7-a39f-300106e7b939/CO-es-20200302-popsignuptwoweeks-perspective_alpha_website_large.jpg); background-repeat: no-repeat; background-size: cover; position: relative;">
+    <div style="position: relative;">
+        <div style="padding-left: 3%; padding-top: 1%;">
+            <a href="index.html"><p class="float-left" style="color: #E50914; font-weight: bold; font-display: Bebas Neue;"><font size="25px">NETFLIX</font></p></a>
+        </div>
+        <div style="margin-top: 7%; margin-left: 32%; margin-right: 32%; margin-bottom: 5%; padding-top: 4%; padding-bottom: 3%; padding-left: 5%; padding-right: 5%; backdrop-filter: brightness(0.3);">
+            <div>
+                <h2 style="color: white; font-weight: bold; font-size: 32px;"><font face="Arial">Inicia sesión</font></h2>
+            </div>
+            <form style="padding-top: 7%;">
+                <div class="form-group"><font face="Arial">
+                    <input style="background-color: #333333; font-size: 16px; padding-top: 3%; padding-bottom: 3%; border: none; color: white; border-bottom: 1.5px #E87C03 solid;" type="email tel" autocomplete="email" class="form-control form-control-lg" placeholder="Email o número de teléfono"></font>
+                    <small style="color: #E87C03;">Ingresa un email o un número de teléfono válido.</small>
+                </div>
+                <div class="form-group"><font face="Arial">
+                    <input style="background-color: #333333; font-size: 16px; padding-top: 3%; padding-bottom: 3%; border: none; color: white; border-bottom: 1.5px #E87C03 solid;" type="password" class="form-control form-control-lg" placeholder="Contraseña"></font>
+                    <small style="color: #E87C03;">La contraseña debe tener entre 4 y 60 caracteres.</small>
+                </div>
+                <div style=" margin-top: 10%;">
+                    <button class="btn btn-block" style="background-color: #E50914; color: white; padding-top: 3%; padding-bottom: 3%; font-weight: bold; font-size: 16px;"><font face="Arial">Iniciar sesión</font></button>
+                </div>
+                <div style="margin-top: 2%; padding-left: 6%;">
+                    <div class="form-check float-left">
+                        <label for="form-check-label">
+                            <input type="checkbox" class="form-check-input"><p style="font-size: 13px; color: #999985;"><font face="Arial">Recuérdame</font></p>
+                        </label>
+                    </div>
+                    <div class="float-right">
+                        <a class="text-link" style="font-size: 13px; color: #999985;" href="">¿Necesitas ayuda?</a>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div style="margin-top: 8%; text-align: left;">
+                <a class="btn text-muted" style="background: none; border: none; font-size: 13px; padding: 0; text-align: left;" href="#"><i class="fa fa-facebook-square" style="font-size: 20px;"></i><font face=Arial> Iniciar sesión con Facebook</font></a>
+            </div>
+            <div class="float-left" style="margin-top: 4%;">
+                <p style="color: #868683; font-size: 16px;"><font face="Arial">¿Primera vez en Netflix? <a class="text-link" style="color:white;" href="index.html">Suscribete ya.</a></font></p>
+            </div>
+            <br><br>
+            <div style="margin-top: 3%;">
+                <span style="font-size: 13px; color: #868686; text-align: left;"><font face="Arial">
+                    "Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot."
+                    <br>
+                    "La información recopilada por Google reCAPTCHA está sujeta a la" <a style="color: #005DFF;" href="https://policies.google.com/privacy">Política de privacidad</a> "y a las" <a style="color: #005DFF;" href="https://policies.google.com/terms">Condiciones del servicio</a> "de Google, y se utiliza para proporcionar, mantener y mejorar el servicio de reCAPTCHA, así como para fines generales de seguridad (Google no la utiliza para personalizar publicidad)."
+                </font></span>
+            </div>
+            
+        </div>
     </div>
+    <footer style="color: #999985; padding-left: 13%; padding-right: 15%; padding-top: 2%; margin-top: 7%; backdrop-filter: brightness(0.3);"><font face="sans-serif" weight="normal">
+        <div class="text-left">
+            <p>¿Preguntas? Llama al <a class="text-link" style="color: #999985;" href="">01 800 917 1564</a></p>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Términos de las tarjetas de regalo</a><br>
+            </div>
+            <div class="col-3">
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Términos de uso</a><br>
+            </div>
+            <div class="col-3">
+                <a class="text-link" style="font-size: 13px; color: #999985;" href="">Declaración de privacidad</a><br>
+            </div>
+        </div>
+        </font>
+        <div class="dropdown" style="padding-top: 4%; padding-bottom: 6%;">
+            <button class="btn dropdown-toggle" style="background-color: black; color: #999985; border: solid #999985 1px;" data-toggle="dropdown" type="button"><i class="fa fa-globe"></i> Español</button>
+            <div class="dropdown-menu" style="background-color: black; border: #999985 solid 1px;">
+              <a class="dropdown-item" style="color: #999985;" href="#">Español</a>
+              <a class="dropdown-item" style="color: #999985;" href="#">Inglés</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
